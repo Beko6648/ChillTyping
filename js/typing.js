@@ -1,3 +1,4 @@
+console.log("読み込み完了");
 SpecialKeys.ArrowLeft = () => { $('#cursor').prev().before($('#cursor')) }
 SpecialKeys.ArrowRight = () => { $('#cursor').next().after($('#cursor')) }
 SpecialKeys.Home = () => { $('.answer span:first-child').before($('#cursor')) }
