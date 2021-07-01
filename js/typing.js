@@ -1,4 +1,3 @@
-console.log("読み込み完了");
 SpecialKeys.ArrowLeft = () => { $('#cursor').prev().before($('#cursor')) }
 SpecialKeys.ArrowRight = () => { $('#cursor').next().after($('#cursor')) }
 SpecialKeys.Home = () => { $('.answer span:first-child').before($('#cursor')) }
@@ -133,7 +132,8 @@ $(() => {
         switch (gameMode) {
             case 'addproblem':// 問題追加
                 $('.problemStatement').text('');
-                let problemList = getProblem();
+                // 問題取得処理をgithubPages用にコメントアウト
+                // let problemList = getProblem();
                 console.log(problemList);
 
                 problemList.forEach((value) => {
